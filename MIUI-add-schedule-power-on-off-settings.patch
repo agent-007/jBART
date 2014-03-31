@@ -1,0 +1,38 @@
+--- apkDecompiled/Settings.apk/res/values/public.xml	2014-03-31 12:03:53.017647796 +0400
++++ apkDecompiled/Settings.apk.patched/res/values/public.xml	2014-03-31 12:04:07.729646931 +0400
+@@ -6427,4 +6427,6 @@
+     <public type="menu" name="usage_log" id="0x7f110006" />
+     <public type="menu" name="vpn" id="0x7f110007" />
+     <public type="menu" name="wifi_setup" id="0x7f110008" />
+-</resources>
+\ В конце файла нет новой строки
++    <public type="drawable" name="ic_settings_schpwronoff" id="0x7f0202c4" />
++    <public type="id" name="power_settings" id="0x7f0a039f" />
++</resources>
+--- apkDecompiled/Settings.apk/res/values/ids.xml	2014-03-31 12:03:52.801647809 +0400
++++ apkDecompiled/Settings.apk.patched/res/values/ids.xml	2014-03-31 12:04:07.728646931 +0400
+@@ -922,4 +922,5 @@
+     <item type="id" name="vpn_create">false</item>
+     <item type="id" name="vpn_lockdown">false</item>
+     <item type="id" name="wifi_wps">false</item>
++    <item type="id" name="power_settings">false</item>
+ </resources>
+--- apkDecompiled/Settings.apk/res/xml/settings_headers.xml	2014-03-31 12:03:52.524647825 +0400
++++ apkDecompiled/Settings.apk.patched/res/xml/settings_headers.xml	2014-03-31 12:04:07.732646931 +0400
+@@ -56,6 +56,9 @@
+         <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
+     </header>
+     <header android:id="@id/system_section" android:title="@string/header_category_system" />
++    <header android:icon="@drawable/ic_audio_alarm" android:id="@id/power_settings" android:title="@string/schedule_power_on_off_settings_title">
++        <intent android:action="com.android.settings.SCHEDULE_POWER_ON_OFF_SETTING" />
++    </header>
+     <header android:icon="@drawable/ic_oldman_mode_settings" android:id="@id/oldman_mode_settings" android:title="@string/oldman_mode_entry_name">
+         <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.OldmanModeSettings" />
+     </header>
+@@ -70,4 +73,4 @@
+     <header android:icon="@drawable/ic_about_settings" android:id="@id/about_settings" android:title="@string/about_settings">
+         <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.Settings$DeviceInfoSettingsActivity" />
+     </header>
+-</preference-headers>
+\ В конце файла нет новой строки
++</preference-headers>

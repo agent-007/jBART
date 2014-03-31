@@ -16,12 +16,14 @@ EXECDIR=$(pwd)
 PROJDIR="$1"
 
 PATCH0=lenovo_S820_services.jar-remove-check-sign.patch
-PATCH1=MIUI-enable-memory-select.patch
+PATCH1=MIUI-add-schedule-power-on-off-settings.patch
 PATCH2=MIUI-stable-remove-sound-profiles.patch
 
 cp "$PATCH0" "$PROJDIR"
 cp "$PATCH1" "$PROJDIR"
 cp "$PATCH2" "$PROJDIR"
+
+cp ic_settings_schpwronoff.png "$PROJDIR"/apkDecompiled/Settings.apk/res/drawable-xhdpi
 
 cd "$PROJDIR"
 
@@ -37,7 +39,7 @@ cp baseROM/system/framework/services.jar .
 baksmali -a17 -l -b -o baseROM/system/framework/services baseROM/system/framework/services.jar
 
 # apply patches
-for PATCH in "$PATCH0" "$PATCH1" "$PATCH2" ; do
+for PATCH in "$PATCH0" "$PATCH1" "$PATCH2"; do
     patch -p0 < $PATCH
     if [ "$?" != 0 ] ; then
         exit 1
@@ -56,6 +58,8 @@ zip -1 -r services.jar classes.dex
 rm -rf classes.dex services 
 # return to base
 cd "$EXECDIR"
+
+find "$PROJDIR"/apkDecompiled -name '*.orig' -delete
 
 echo "Done. Now you should compile ROM with jBART."
 

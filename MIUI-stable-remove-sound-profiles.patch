@@ -1,5 +1,5 @@
---- apkDecompiled/Settings.apk/res/xml/settings_headers.xml.orig	2014-01-20 17:44:47.325441104 +0400
-+++ apkDecompiled/Settings.apk/res/xml/settings_headers.xml	2014-01-20 17:44:59.278441487 +0400
+--- apkDecompiled/Settings.apk/res/xml/settings_headers.xml.orig	2014-03-31 13:45:04.797290802 +0400
++++ apkDecompiled/Settings.apk/res/xml/settings_headers.xml	2014-03-31 13:45:27.815289449 +0400
 @@ -26,7 +26,6 @@
      <header android:icon="@drawable/ic_sound_settings" android:id="@id/sound_settings" android:title="@string/sound_settings">
          <intent android:action="android.settings.SOUND_SETTINGS" />
@@ -8,10 +8,3 @@
      <header android:icon="@drawable/ic_status_bar_settings" android:id="@id/status_bar_settings" android:title="@string/status_bar_settings">
          <intent android:targetPackage="com.android.systemui" android:targetClass="com.android.systemui.settings.StyleSettings" />
      </header>
-@@ -67,4 +66,4 @@
-     <header android:icon="@drawable/ic_about_settings" android:id="@id/about_settings" android:title="@string/about_settings">
-         <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.Settings$DeviceInfoSettingsActivity" />
-     </header>
--</preference-headers>
-\ В конце файла нет новой строки
-+</preference-headers>
