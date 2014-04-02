@@ -23,6 +23,7 @@ PATCH3=MIUI-enable-button-light-settings.patch
 cp "$PATCH0" "$PROJDIR"
 cp "$PATCH1" "$PROJDIR"
 cp "$PATCH2" "$PROJDIR"
+cp "$PATCH3" "$PROJDIR"
 
 cp ic_settings_schpwronoff.png "$PROJDIR"/apkDecompiled/Settings.apk/res/drawable-xhdpi
 
