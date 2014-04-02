@@ -18,6 +18,7 @@ PROJDIR="$1"
 PATCH0=lenovo_S820_services.jar-remove-check-sign.patch
 PATCH1=MIUI-add-schedule-power-on-off-settings.patch
 PATCH2=MIUI-stable-remove-sound-profiles.patch
+PATCH3=MIUI-enable-button-light-settings.patch
 
 cp "$PATCH0" "$PROJDIR"
 cp "$PATCH1" "$PROJDIR"
@@ -39,7 +40,7 @@ cp baseROM/system/framework/services.jar .
 baksmali -a17 -l -b -o baseROM/system/framework/services baseROM/system/framework/services.jar
 
 # apply patches
-for PATCH in "$PATCH0" "$PATCH1" "$PATCH2"; do
+for PATCH in "$PATCH0" "$PATCH1" "$PATCH2" "$PATCH3"; do
     patch -p0 < $PATCH
     if [ "$?" != 0 ] ; then
         exit 1
@@ -47,7 +48,7 @@ for PATCH in "$PATCH0" "$PATCH1" "$PATCH2"; do
 done
 
 # compile services
-smali -a17 -o baseROM/system/framework/classes.dex baseROM/system/framework/services
+smali -a16 -o baseROM/system/framework/classes.dex baseROM/system/framework/services
 if [ "$?" != 0 ] ; then
     exit 1
 fi

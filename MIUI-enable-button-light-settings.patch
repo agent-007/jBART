@@ -1,0 +1,11 @@
+--- apkDecompiled/Settings.apk/res/values/bools.xml.orig	2014-04-02 17:32:49.547800636 +0400
++++ apkDecompiled/Settings.apk/res/values/bools.xml	2014-04-02 17:33:14.551799166 +0400
+@@ -15,7 +15,7 @@
+     <bool name="disable_move_to_sd">false</bool>
+     <bool name="mass_storage_enable">false</bool>
+     <bool name="enable_erase_application">true</bool>
+-    <bool name="has_button_light">false</bool>
++    <bool name="has_button_light">true</bool>
+     <bool name="only_get_wifi_changed_config">false</bool>
+     <bool name="emulated_available_internal_memroy">false</bool>
+     <bool name="has_internal_sdcard">false</bool>
