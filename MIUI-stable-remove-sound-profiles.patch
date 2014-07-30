@@ -1,5 +1,5 @@
---- apkDecompiled/Settings.apk/res/xml/settings_headers.xml.orig	2014-03-31 13:45:04.797290802 +0400
-+++ apkDecompiled/Settings.apk/res/xml/settings_headers.xml	2014-03-31 13:45:27.815289449 +0400
+--- appDecompiled/system#app/Settings.apk/res/xml/settings_headers.xml.orig	2014-03-31 13:45:04.797290802 +0400
++++ appDecompiled/system#app/Settings.apk/res/xml/settings_headers.xml	2014-03-31 13:45:27.815289449 +0400
 @@ -26,7 +26,6 @@
      <header android:icon="@drawable/ic_sound_settings" android:id="@id/sound_settings" android:title="@string/sound_settings">
          <intent android:action="android.settings.SOUND_SETTINGS" />

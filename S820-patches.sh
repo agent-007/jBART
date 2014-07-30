@@ -25,7 +25,7 @@ cp "$PATCH1" "$PROJDIR"
 cp "$PATCH2" "$PROJDIR"
 cp "$PATCH3" "$PROJDIR"
 
-cp ic_settings_schpwronoff.png "$PROJDIR"/apkDecompiled/Settings.apk/res/drawable-xhdpi
+cp -v ic_settings_schpwronoff.png "$PROJDIR/appDecompiled/system#app/Settings.apk/res/drawable-xhdpi"
 
 cd "$PROJDIR"
 
@@ -61,7 +61,7 @@ rm -rf classes.dex services
 # return to base
 cd "$EXECDIR"
 
-find "$PROJDIR"/apkDecompiled -name '*.orig' -delete
+find "$PROJDIR"/appDecompiled -name '*.orig' -delete
 
 echo "Done. Now you should compile ROM with jBART."
 

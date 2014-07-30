@@ -1,13 +1,13 @@
---- apkDecompiled/Settings.apk/res/values/ids.xml	2014-03-31 12:03:52.801647809 +0400
-+++ apkDecompiled/Settings.apk.patched/res/values/ids.xml	2014-03-31 12:04:07.728646931 +0400
+--- appDecompiled/system#app/Settings.apk/res/values/ids.xml	2014-03-31 12:03:52.801647809 +0400
++++ appDecompiled/system#app/Settings.apk.patched/res/values/ids.xml	2014-03-31 12:04:07.728646931 +0400
 @@ -922,4 +922,5 @@
      <item type="id" name="vpn_create">false</item>
      <item type="id" name="vpn_lockdown">false</item>
      <item type="id" name="wifi_wps">false</item>
 +    <item type="id" name="power_settings">false</item>
  </resources>
---- apkDecompiled/Settings.apk/res/xml/settings_headers.xml	2014-03-31 12:03:52.524647825 +0400
-+++ apkDecompiled/Settings.apk.patched/res/xml/settings_headers.xml	2014-03-31 12:04:07.732646931 +0400
+--- appDecompiled/system#app/Settings.apk/res/xml/settings_headers.xml	2014-03-31 12:03:52.524647825 +0400
++++ appDecompiled/system#app/Settings.apk.patched/res/xml/settings_headers.xml	2014-03-31 12:04:07.732646931 +0400
 @@ -56,6 +56,9 @@
          <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
      </header>
@@ -26,8 +26,8 @@
 \ В конце файла нет новой строки
 +</preference-headers>
 </resources>
---- apkDecompiled/Settings.apk/res/values/public.xml	2014-06-03 16:35:00.572349313 +0400
-+++ apkDecompiled/Settings.apk.patched/res/values/public.xml	2014-06-03 16:37:08.756353415 +0400
+--- appDecompiled/system#app/Settings.apk/res/values/public.xml	2014-06-03 16:35:00.572349313 +0400
++++ appDecompiled/system#app/Settings.apk.patched/res/values/public.xml	2014-06-03 16:37:08.756353415 +0400
 @@ -6812,4 +6812,6 @@
      <public type="menu" name="usage_log" id="0x7f110007" />
      <public type="menu" name="vpn" id="0x7f110008" />
